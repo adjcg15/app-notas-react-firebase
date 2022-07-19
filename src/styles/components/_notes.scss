@@ -1,0 +1,81 @@
+main {
+    max-width: 75vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.notes__main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notes__appbar {
+    align-items: center;
+    background-color: $primary;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    button {
+        font-size: $regular-size;
+        font-weight: bold;
+        min-width: 110px;
+    }
+}
+
+.notes__content {
+    display: flex;
+    flex-direction: column;
+    height: 1005;
+    height: 100%;
+    padding: 20px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.notes__title-input {
+    color: $primary;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.notes__title-input.active {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border: 1px solid #c4c4c4;
+}
+
+.notes__editor {
+    border-radius: 4px;
+    padding: 0px 10px;
+    color: $dark-gray;
+}
+
+.notes__editor.active {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    border: 1px solid #c4c4c4;
+}
+
+.notes__toolbar {
+    border: none;
+    border-bottom: 1px solid #F1F1F1;
+    padding: 0 0 10px 0;
+}
+
+.notes__area {
+    margin: 0;
+    height: auto;
+}

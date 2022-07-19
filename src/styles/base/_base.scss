@@ -1,0 +1,151 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #413F38;
+    height: 100vh;
+    width: 100vw;
+    font-size: $regular-size;
+    font-weight: 400;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+}
+
+input {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+h3 {
+    color: $dark-gray;
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+    span {
+        color: $primary;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: $regular-size + 2px;
+    border-radius: 4px;
+    padding: 7px 0;
+    min-width: 130px;
+
+    p {
+        font-weight: 600;
+        margin: 0 !important;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: $primary;
+    border: 2px solid $primary;
+    color: #ffffff;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($color: $primary, $amount: 7);
+        border: 2px solid darken($color: $primary, $amount: 7);
+    }
+}
+
+.secondary-button {
+    border: 2px solid $primary;
+    color: $primary;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border: 2px solid darken($color: $primary, $amount: 7);
+        color: darken($color: $primary, $amount: 7);
+    }
+}
+
+.secondary-button.white {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+
+    &:hover {
+        color: darken($color: #ffffff, $amount: 15);
+        border: 2px solid darken($color: #ffffff, $amount: 15);
+    }
+}
+
+.ternary-button {
+    color: $primary;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: darken($color: $primary, $amount: 7);
+
+        i {
+            transform: translateX(5px);
+        }
+    }
+
+    i {
+        transition: all 0.3s ease;
+        font-size: $regular-size + 4px;
+    }
+}
+
+.section {
+    margin: 70px 0 0;
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}

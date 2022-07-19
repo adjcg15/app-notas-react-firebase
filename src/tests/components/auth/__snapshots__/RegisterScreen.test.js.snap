@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <RegisterScreen /> debe mostrarse correctamente 1`] = `
+Array [
+  <h3
+    className="auth__title"
+  >
+    Sign up
+  </h3>,
+  <form
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        className="auth__form-label"
+        htmlFor="name"
+      >
+        Name
+      </label>
+      <input
+        autoComplete="off"
+        className="auth__input"
+        id="name"
+        name="name"
+        onChange={[Function]}
+        placeholder="John Doe"
+        type="text"
+        value="john"
+      />
+    </div>
+    <div>
+      <label
+        className="auth__form-label"
+        htmlFor="email"
+      >
+        Email
+      </label>
+      <input
+        autoComplete="off"
+        className="auth__input"
+        id="email"
+        name="email"
+        onChange={[Function]}
+        placeholder="example@example.com"
+        type="text"
+        value="example@example.com"
+      />
+    </div>
+    <div>
+      <label
+        className="auth__form-label"
+        htmlFor="password"
+      >
+        Password
+      </label>
+      <input
+        className="auth__input"
+        id="password"
+        name="password"
+        onChange={[Function]}
+        placeholder="Password"
+        type="password"
+        value="123456"
+      />
+    </div>
+    <div>
+      <label
+        className="auth__form-label"
+        htmlFor="password2"
+      >
+        Confirm your password
+      </label>
+      <input
+        className="auth__input"
+        id="password2"
+        name="password2"
+        onChange={[Function]}
+        placeholder="Confirm password"
+        type="password"
+        value="123456"
+      />
+    </div>
+    <button
+      className="btn btn-primary btn-block"
+      type="submit"
+    >
+      Register
+    </button>
+    <a
+      className="link mt-5"
+      href="/auth/login"
+      onClick={[Function]}
+    >
+      Already registered
+    </a>
+  </form>,
+]
+`;

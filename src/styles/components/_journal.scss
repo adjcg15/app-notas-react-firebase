@@ -1,0 +1,111 @@
+.journal__main-content {
+    display: flex;
+}
+
+.journal__sidebar {
+    background-color: $dark-gray;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 20px;
+    width: 25%;
+    min-width: 230px;
+}
+
+.journal__sidebar-navbar {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        font-weight: lighter;
+        color: #fff;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    button {
+        padding: 0;
+        display: block;
+        text-align: right;
+    }
+}
+
+.journal__new-entry {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+        color: #ffffff;
+        transition: color .3s ease;
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+    }
+
+    button:hover {
+        color: lighten($color: $primary, $amount: 15);
+    }
+}
+
+.journal__entries {
+    flex: 1 1 auto;
+    margin-top: 30px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.journal__entry {
+    background-color: #fff;
+    border-radius: 4px;
+    color: $dark-gray;
+    display: flex;
+    padding: 10px ;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($color: #ffffff, $amount: 10);
+    }
+}
+
+.journal__entry.active {
+    background-color: $primary;
+    color: #ffffff;
+}
+
+.journal__entry-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.journal__entry-content {
+    font-size: 10px;
+}
+
+.journal__entry-date-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+
+    & span {
+        font-size: 12px;
+    }
+}
